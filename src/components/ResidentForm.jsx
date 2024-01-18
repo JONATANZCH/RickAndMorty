@@ -34,13 +34,17 @@ const ResidentForm = ({handleSubmit, theme, changeTheme, searching}) => {
     };
 
     return (
+      <>
+        <div className='instructions'>
+            <h1>Ingrese una dimensión del 1 al 126 para conocer los personajes!</h1>
+        </div>
         <form onSubmit={handleFormSubmit} className="dimensionFilter">
             <div onClick={changeTheme} className='dimensionFilter__icon dimensionFilter__icon--link'>
                 <i className={`navbar__icon bx bx-${theme === "light" ? "moon" : "sun"}`}></i>
             </div>
             <input 
                 className='dimensionFilter__input' 
-                type="text" 
+                type="number" 
                 id='idLocation' 
                 placeholder='type a location id'
                 value={dimensionId}
@@ -48,6 +52,7 @@ const ResidentForm = ({handleSubmit, theme, changeTheme, searching}) => {
             />
             <button className='dimensionFilter__icon'><i className='bx bx-search-alt-2'></i></button>
         </form>
+      </>
     )
 }
 

@@ -1,7 +1,7 @@
 .dimensionFilter {
     padding: 40px 20px;
     max-width: 1400px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -61,6 +61,17 @@
 
 .dimensionFilter__icon {
     font-size: x-large;
+}
+
+.instructions {
+    color: rgb(90, 180, 0);
+    text-align: center;
+    margin-top: 5rem;
+    font-style: oblique;
+}
+
+#light .instructions {
+    color: rgb(255, 0, 76);
 }
 
 #light .dimensionFilter__icon {

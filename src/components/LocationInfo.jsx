@@ -4,7 +4,6 @@ import "./styles/Location.css";
 const LocationInfo = ({ location }) => {
   return (
     <div id='contenedor'>
-
         <div className="card">
             <div className="content">
                 <div className="back">
@@ -41,7 +40,6 @@ const LocationInfo = ({ location }) => {
                 </div>
             </div>
         </div>
-
     </div>
   );
 }
