@@ -1,0 +1,30 @@
+.hero {
+    background-color: #062226;
+    background: url("/public/img/image3.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    box-shadow: 0 0 50px 0 rgba(155, 155, 155, 0.315);
+}
+
+#light .hero {
+    background: #0a3941 url(/public/img/rick-y-morty-en-el-espacio.jpg) center bottom/cover no-repeat;
+    box-shadow: 0 0 50px 0 rgba(29, 29, 29, 0.842);
+}
+
+@media (max-width: 767px) {
+    .hero {
+        background-size: auto;
+        height: 30vh;
+    }
+}
